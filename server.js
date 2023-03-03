@@ -19,7 +19,7 @@ const port= process.env.port || 5000
 app.post("/addworkoreder", async (req, res) => {
   
 const data=req.body
-
+console.log(data)
 
 const newData={"Date": new Date(),
 "workOrderDate": data.workOrderDate,
